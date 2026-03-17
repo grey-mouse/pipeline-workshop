@@ -21,7 +21,7 @@ jobs:
       - name: Print figlet banner from notes.txt
         run: |
           TEXT="$(cat notes.txt)"
-          figlet "$TEXT"
+          figlet -f slant "$TEXT"
 
   render-cowsay-banner:
     runs-on: ubuntu-latest
